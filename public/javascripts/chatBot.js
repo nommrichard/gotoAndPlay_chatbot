@@ -2,10 +2,8 @@
 (function () {
     let Message;
 
-
     const hello_texts = ["Hi there! Thank you for texting me, finally! gotoAndBot is here for you", "Hello! This is gotoAndBot. Don’t be afraid to ask stupid questions. I love them!", "Greetings! I’m gotoAndBot. Any worries? You are at the right place!", "Hi! This is gotoAndBot, your special chatbot. I’m sure we’ll get on really well.", "Hi, gotoAndBot here. I’m fine, and you?", "Hi, this is gotoAndBot. Your worries worrie me.", "Hello and welcome! I am gotoAndBot, you are in good hands now! How can I help?", "Hello! This is gotoAndBot. I know you came to chat with me! I am ready!", "Hello! I am gotoAndBot, standing by to get your issues fixed and worries vanished", "Hi! Thank you for chatting. This is gotoAndBot. I promise to take good care of you!", "Greetings! You are chatting with gotoAndBot. Please be nice to her ;)", "Hello, I’m awesome. How can I help you?", "Hi! gotoAndBot here, thanks for chatting! What’s up?", "Hi! This is gotoAndBot. I was so bored. Thank you for saving me!", "Hi! You have called at the right time! gotoAndBot online with you.", "Hi! Thank you for calling! This is gotoAndBot. I’ve been expecting you!"];
     const chosen_message = hello_texts[Math.floor(Math.random() * hello_texts.length)];
-
 
     Message = function (arg) {
         this.text = arg.text, this.message_side = arg.message_side;
@@ -164,12 +162,6 @@
                     });
                     setTimeout(function () {
                         return sendMessage("something went wrong", "right");
-                    }, 1000);
-                    // ilmateade
-                } else if (text.includes("weather")) {
-                    setTimeout(function () {
-                        let summa = valuuta(0.5, 20);
-                        return sendMessage("homod" + summa, "right");
                     }, 1000);
                     // valuuta converter
                 } else if (text.toLowerCase().includes("eur") && text.toLowerCase().includes("usd")) {
