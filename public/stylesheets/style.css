@@ -86,32 +86,34 @@ body {
     opacity: 0;
 }
 .messages .message.left .avatar {
-    background-color: #f6b93b;
+    background-color: lightblue;
     float: left;
 }
 .messages .message.left .text_wrapper {
-    background-color: #fbc531;
+    background-color: royalblue;
     margin-left: 20px;
 }
 .messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
     right: 100%;
-    border-right-color: #fbc531;
+    border-right-color: royalblue;
 }
 .messages .message.left .text {
     color: black;
 }
 .messages .message.right .avatar {
-    background-color: #00a8ff;
+    background-image: url("../images/chatbot_avatar.jpg");
+    background-size: 200px;
+    background-position: center;
     float: right;
 }
 .messages .message.right .text_wrapper {
-    background-color: #0097e6;
+    background-color: darkorange;
     margin-right: 20px;
     float: right;
 }
 .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
     left: 100%;
-    border-left-color: #0097e6;
+    border-left-color: darkorange;
 }
 .messages .message.right .text {
     color: black;
